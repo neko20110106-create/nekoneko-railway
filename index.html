@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ねこねこ旅客鉄道株式会社</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Yu Gothic","Hiragino Sans",sans-serif;
+    background:#eef7ff;
+    color:#333;
+}
+
+/* ===== ヘッダー ===== */
+
+.hero{
+    background:linear-gradient(135deg,#4ab7ff,#1f8fff);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.logo{
+    width:180px;
+    max-width:80%;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:25px;
+}
+
+.discord-btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:white;
+    color:#1f8fff;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.discord-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* ===== コンテンツ ===== */
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.card{
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    margin-bottom:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card h2{
+    color:#1f8fff;
+    margin-bottom:15px;
+}
+
+.card ul{
+    padding-left:25px;
+}
+
+.card li{
+    margin:8px 0;
+}
+
+/* ===== SNS ===== */
+
+.social{
+    text-align:center;
+    margin-top:40px;
+}
+
+.social h2{
+    color:#1f8fff;
+    margin-bottom:25px;
+}
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.social-icons a{
+    text-decoration:none;
+    color:#333;
+}
+
+.social-icons img{
+    width:90px;
+    height:90px;
+    transition:.3s;
+}
+
+.social-icons img:hover{
+    transform:scale(1.1);
+}
+
+/* ===== フッター ===== */
+
+footer{
+    margin-top:40px;
+    background:#1f8fff;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ===== スマホ対応 ===== */
+
+@media(max-width:700px){
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .logo{
+        width:140px;
+    }
+
+    .social-icons img{
+        width:70px;
+        height:70px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ヘッダー -->
+
+<section class="hero">
+
+    <img src="logo.png" class="logo" alt="NRロゴ">
+
+    <h1>ねこねこ旅客鉄道株式会社</h1>
+
+    <a class="discord-btn"
+       href="https://discord.gg/n9dENtWJgF"
+       target="_blank">
+       Discordに参加する
+    </a>
+
+</section>
+
+<!-- メイン -->
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>📖 このサーバーについて</h2>
+
+        <p>
+            ねこねこ旅客鉄道株式会社は、
+            鉄道アドオン制作や雑談を楽しむためのDiscordサーバーです。
+            誰でも気軽に参加できます。
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🛠️ 活動内容</h2>
+
+        <ul>
+            <li>マイクラサーバー開発</li>
+            <li>鉄道延伸</li>
+        </ul>
+
+        <p>など</p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🚉 コンテンツ</h2>
+
+        <ul>
+            <li>雑談</li>
+            <li>写真共有</li>
+            <li>Minecraft</li>
+            <li>鉄道アドオン</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- SNS -->
+
+<div class="social">
+
+    <h2>公式アカウント</h2>
+
+    <div class="social-icons">
+
+        <a href="https://x.com/neko_hosiyomi?s=11" target="_blank">
+
+            <img src="x.jpg" alt="X">
+
+            <p>X (Twitter)</p>
+
+        </a>
+
+        <a href="https://youtube.com/channel/UCLJWz-3I_8ZIl6NHFbRvg3A?si=1qtrr4sRC3rktKBE"
+           target="_blank">
+
+            <img src="youtube.jpg" alt="YouTube">
+
+            <p>YouTube</p>
+
+        </a>
+
+    </div>
+
+</div>
+
+<footer>
+
+    © 2025 ねこねこ旅客鉄道株式会社
+
+</footer>
+
+</body>
+</html>

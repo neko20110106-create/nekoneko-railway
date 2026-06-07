@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>各リンク | ねこねこ旅客鉄道株式会社</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Yu Gothic","Hiragino Sans",sans-serif;
+    background:#eef7ff;
+    color:#333;
+}
+
+/* ===== 上部バー ===== */
+
+.topbar{
+    position:sticky;
+    top:0;
+    z-index:2000;
+
+    height:70px;
+    background:#1f8fff;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 15px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+.menu-btn{
+    background:none;
+    border:none;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.logo-link{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.logo-link img{
+    height:45px;
+}
+
+/* ===== サイドメニュー ===== */
+
+#sideMenu{
+    position:fixed;
+    top:0;
+    left:-260px;
+
+    width:250px;
+    height:100%;
+
+    background:white;
+
+    padding-top:80px;
+
+    transition:0.3s;
+
+    box-shadow:3px 0 15px rgba(0,0,0,.15);
+
+    z-index:3000;
+}
+
+#sideMenu h3{
+    text-align:center;
+    margin-bottom:20px;
+    color:#1f8fff;
+}
+
+#sideMenu a{
+    display:block;
+    padding:15px 25px;
+    text-decoration:none;
+    color:#333;
+}
+
+#sideMenu a:hover{
+    background:#eef7ff;
+}
+
+/* ===== コンテンツ ===== */
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+.card{
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    margin-bottom:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card h2{
+    color:#1f8fff;
+    margin-bottom:20px;
+}
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.social-icons a{
+    text-decoration:none;
+    color:#333;
+    text-align:center;
+}
+
+.social-icons img{
+    width:90px;
+    height:90px;
+    transition:.3s;
+}
+
+.social-icons img:hover{
+    transform:scale(1.1);
+}
+
+.discord-btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#1f8fff;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:15px;
+}
+
+.discord-area{
+    text-align:center;
+}
+
+.discord-link{
+    margin-top:15px;
+    word-break:break-all;
+}
+
+/* ===== フッター ===== */
+
+footer{
+    margin-top:40px;
+    background:#1f8fff;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.version{
+    font-size:12px;
+    opacity:0.7;
+    margin-top:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="NRロゴ">
+    </a>
+
+</header>
+
+<div id="sideMenu">
+
+    <h3>メニュー</h3>
+
+    <a href="index.html">🏠 ホーム</a>
+    <a href="news.html">📢 お知らせ</a>
+    <a href="company.html">🏢 会社について</a>
+    <a href="report.html">📋 活動報告</a>
+    <a href="links.html">🔗 各リンク</a>
+
+</div>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>📢 公式SNS</h2>
+
+        <div class="social-icons">
+
+            <a href="https://x.com/nekonekorailway?s=11"
+               target="_blank">
+
+                <img src="x.png" alt="公式X">
+                <p>公式X</p>
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🐱 nekoのSNS</h2>
+
+        <div class="social-icons">
+
+            <a href="https://x.com/neko_hosiyomi?s=11"
+               target="_blank">
+
+                <img src="x.png" alt="X">
+                <p>X</p>
+
+            </a>
+
+            <a href="https://youtube.com/channel/UCLJWz-3I_8ZIl6NHFbRvg3A?si=1qtrr4sRC3rktKBE"
+               target="_blank">
+
+                <img src="youtube.png" alt="YouTube">
+                <p>YouTube</p>
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>💬 Discord</h2>
+
+        <div class="discord-area">
+
+            <a class="discord-btn"
+               href="https://discord.gg/n9dENtWJgF"
+               target="_blank">
+               Discordに参加する
+            </a>
+
+            <div class="discord-link">
+                https://discord.gg/n9dENtWJgF
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+
+    <div>© 2025 ねこねこ旅客鉄道株式会社</div>
+
+    <div class="version">Version v1.0.0</div>
+
+</footer>
+
+<script>
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const sideMenu =
+document.getElementById("sideMenu");
+
+let open = false;
+
+menuBtn.onclick = () => {
+
+    if(open){
+        sideMenu.style.left = "-260px";
+    }else{
+        sideMenu.style.left = "0";
+    }
+
+    open = !open;
+
+};
+
+</script>
+
+</body>
+</html>

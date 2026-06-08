@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お知らせ | ねこねこ旅客鉄道株式会社</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Yu Gothic","Hiragino Sans",sans-serif;
+    background:#eef7ff;
+    color:#333;
+}
+
+/* ===== ヘッダー ===== */
+
+.header{
+    background:#4ab7ff;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+}
+
+.header-logo{
+    height:50px;
+}
+
+.header-home{
+    margin:auto;
+}
+
+.spacer{
+    width:50px;
+}
+
+/* ===== メニュー ===== */
+
+#menuBtn{
+    position:fixed;
+    top:15px;
+    left:15px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:12px;
+    background:white;
+    font-size:28px;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+    z-index:1001;
+    cursor:pointer;
+}
+
+#sideMenu{
+    position:fixed;
+    top:0;
+    left:-260px;
+    width:250px;
+    height:100%;
+    background:white;
+    padding-top:80px;
+    transition:0.3s;
+    box-shadow:3px 0 15px rgba(0,0,0,.15);
+    z-index:1000;
+}
+
+#sideMenu h3{
+    text-align:center;
+    margin-bottom:20px;
+    color:#1f8fff;
+}
+
+#sideMenu a{
+    display:block;
+    padding:15px 25px;
+    text-decoration:none;
+    color:#333;
+}
+
+#sideMenu a:hover{
+    background:#eef7ff;
+}
+
+/* ===== コンテンツ ===== */
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+.page-title{
+    text-align:center;
+    color:#1f8fff;
+    margin-bottom:30px;
+}
+
+.category{
+    background:white;
+    border-radius:25px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.news-item{
+    background:white;
+    border-radius:18px;
+    padding:18px;
+    margin-bottom:15px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.news-date{
+    font-size:14px;
+    color:#666;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.notice{border-left:6px solid #1f8fff;}
+.update{border-left:6px solid #4ab7ff;}
+
+/* ===== フッター ===== */
+
+footer{
+    margin-top:40px;
+    background:#1f8fff;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.version{
+    font-size:12px;
+    opacity:0.7;
+    margin-top:5px;
+}
+</style>
+</head>
+
+<body>
+
+<button id="menuBtn">☰</button>
+
+<div id="sideMenu">
+
+    <h3>MENU</h3>
+
+    <a href="index.html">🏠 ホーム</a>
+    <a href="news.html">📢 お知らせ</a>
+    <a href="company.html">🏢 会社について</a>
+    <a href="staff.html">👥 運営部紹介</a>
+    <a href="report.html">📋 活動報告</a>
+    <a href="links.html">🔗 各リンク</a>
+
+</div>
+
+<div class="header">
+
+    <div class="spacer"></div>
+
+    <a href="index.html" class="header-home">
+        <img src="logo.png" class="header-logo" alt="ロゴ">
+    </a>
+
+    <div class="spacer"></div>
+
+</div>
+
+<div class="container">
+
+<h1 class="page-title">📢 お知らせ</h1>
+
+<div class="category">
+    <h2 style="color:#1f8fff;">📣 お知らせ</h2>
+
+    <div class="news-item notice">
+        <div class="news-date">2026/6/5</div>
+        <p>公式サイトを公開しました！</p>
+    </div>
+</div>
+
+<div class="category">
+    <h2 style="color:#4ab7ff;">🌐 公式サイト更新状況</h2>
+
+    <div class="news-item update">
+        <div class="news-date">2026/6/7</div>
+        <p>ページを追加しました！</p>
+    </div>
+
+    <div class="news-item update">
+        <div class="news-date">2026/6/6</div>
+        <p>サイドバーを追加しました！</p>
+    </div>
+</div>
+
+<div class="category">
+    <h2 style="color:#8c9eff;">🎮 Minecraftサーバーのお知らせ</h2>
+
+    <p style="border-left:6px solid #8c9eff;padding-left:12px;color:#666;">
+        現在お知らせはありません。
+    </p>
+</div>
+
+<div class="category">
+    <h2 style="color:#b39ddb;">📝 その他のお知らせ</h2>
+
+    <p style="border-left:6px solid #b39ddb;padding-left:12px;color:#666;">
+        現在お知らせはありません。
+    </p>
+</div>
+
+</div>
+
+<footer>
+    <div>© 2026 ねこねこ旅客鉄道株式会社</div>
+    <div class="version">Version v1.5.0</div>
+</footer>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const sideMenu = document.getElementById("sideMenu");
+
+let open = false;
+
+menuBtn.onclick = () => {
+    if(open){
+        sideMenu.style.left = "-260px";
+    }else{
+        sideMenu.style.left = "0";
+    }
+    open = !open;
+};
+</script>
+
+</body>
+</html>
